@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#FBFAFA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <ImageView
+            android:id="@+id/imghinh"
+            android:layout_width="80dp"
+            android:layout_height="67dp" />
+
+        <LinearLayout
+            android:id="@+id/nota"
+            android:layout_width="202dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tên"
+                android:paddingLeft="16dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/note"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:paddingLeft="16dp"
+                android:text="Nghệ danh"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/quocgia"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:paddingLeft="16dp"
+                android:text="Quốc gia"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="1dp">
+
+                <Button
+                    android:id="@+id/them"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:backgroundTint="@color/white"
+                    android:text="+"
+                    android:textColor="@color/white"
+                    android:textSize="12dp"
+                    app:backgroundTint="#2D90DF" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_check_24"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="31dp">
+
+                <Button
+                    android:id="@+id/xoa"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:backgroundTint="@color/white"
+                    android:text="-"
+                    android:textColor="@color/white"
+                    android:textSize="12dp"
+                    app:backgroundTint="#2D90DF" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_clear_24"
+                    android:backgroundTint="#DFAA0B"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ngsao">
+                </ImageView>
+
+                <EditText
+                    android:layout_width="49dp"
+                    android:layout_height="wrap_content"
+                    android:hint=" * "
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
